@@ -6,19 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
 
-/*baner s menu*/
-<hero>
-    <h1>Sea La Vie</h1>
-    <p>
-        Surf and Work (or just chill) in Salinas, Asturias aka vactation apartment for digital nomads.
-    </p>
-    <nav>
+<!--Hero sekce-->
+<hero class="hero">
+
+    <nav class="menu">
         <ul class="menu__list">
             <li class="menu__item"><a href="/" class="menu__link">Home</a></li>
             <li class="menu__item"><a href="/apartment/" class="menu__link">Aparmtent</a></li>
@@ -28,16 +27,35 @@
             <li class="menu__item"><a href="/contact/" class="menu__link">Contact</a></li>
         </ul>
     </nav>
+
+
+
+    <div class="hero-text">
+        <h1>Sea La Vie</h1>
+        <p>
+            Surf and Work (or just chill) in our vactation apartment for digital nomads in Salinas, Asturias. 
+        </p>
+    </div>
+
+    
 </hero>
 
-/*obsah stranky*/
+<!--obsah stranky-->
 <main>
+
+{{ content | safe }}
 
 </main>
 
-/*footer*/
-<footer>
-
+<!--footer-->
+<footer class="footer">
+    <div class="media__icons">
+        <img class="media__icon" src="/images/whatsapp-icon.svg" alt="whatsapp icon">
+        <img class="media__icon" src="/images/gmail-icon.svg" alt="gmail icon">
+        <img class="media__icon" src="/images/fb-icon.svg" alt="facebook icon">
+        <img class="media__icon" src="/images/ig-icon.svg" alt="instagram icon">
+        <img class="media__icon" src="/images/airbnb1-icon.svg" alt="airbnb icon">
+    </div>
 </footer>
     
 </body>
