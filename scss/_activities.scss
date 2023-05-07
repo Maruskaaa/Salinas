@@ -1,0 +1,10 @@
+@use 'colors';
+@use 'basic';
+
+.box {
+    background-color: white;
+max-width: 70%; margin: auto;
+display: flex;
+}
+
+.box__photo {width: 50%;}

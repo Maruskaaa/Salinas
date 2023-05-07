@@ -1,0 +1,35 @@
+@use 'colors';
+
+$body-fontsize: 16px;
+$h1-fontsize: 50px;
+$headrfont: 'Dancing Script', cursive;
+$h2-fontsize: 20px;
+$h3-fontsize: 16px;
+$h4-fontsize: 16px;
+
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  ::before,
+  ::after {
+    box-sizing: inherit;
+  }
+
+  body {margin: 0; 
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;;
+    font-size: $body-fontsize;
+    color: colors.$bodycolor;}
+    
+
+.wrapper {max-width: 1400px; 
+min-height: 100vh;;
+margin: 0 auto;
+padding: 20px 0px 0px 0px;
+background-image: url(/images/ocean-4.jpg); 
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;}

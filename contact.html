@@ -4,37 +4,49 @@ title: Contact
 ---
 
 
-<section class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1531.2302253521989!2d-5.963627402925697!3d43.57368125619232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd369c135f3750cf%3A0x826527a9cef9e17e!2sC.%20Alcalde%20Luis%20Treillard%2C%20n%C2%BA%2011%2C%20bajo%20B%2C%2033405%20Salinas%2C%20Asturias!5e0!3m2!1sen!2ses!4v1683268826587!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section>
 
-<section>
+
+<div>
     <p>For direct booking see our airbnb account</p> 
     <img class="icon__airbnb" src="/images/airbnb2-icon.svg">
-</section>
+</div>
+
 
 
 <form action="http://formular.itgirls.cz" method="post">
-    <label> Name
-        <input type="text" name="name" id="name" required>
-    </label>
     
-    <label> E-mail
-        <input type="email" name="e-mail" id="e-email" required>
-    </label>
+    <div class="form-field">
+        <label> Name
+            <input type="text" name="name" id="name" required>
+        </label>
+    </div>
+    
+    <div class="form-field">
+        <label> E-mail
+            <input type="email" name="e-mail" id="e-email" required>
+        </label>
+    </div>
 
-    <label> Phone
-        <input type="tel" name="phone" id="phone" required>
-    </label>
-    
-    <label> Message
-        <input type="text" name="message" id="message" required>
-    </label>
-    
-    <button type="submit"> Send </button> 
+    <div class="form-field">
+        <label> Phone
+            <input type="tel" name="phone" id="phone" required>
+        </label>
+    </div>
+
+    <div class="form-field">
+        <label> Your message
+            <textarea name="message" id="message"  rows="10" required></textarea>
+        </label>
+    </div>
+
+    <button type="submit"> Send </button>
+
 </form> 
 
 
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1531.2302253521989!2d-5.963627402925697!3d43.57368125619232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd369c135f3750cf%3A0x826527a9cef9e17e!2sC.%20Alcalde%20Luis%20Treillard%2C%20n%C2%BA%2011%2C%20bajo%20B%2C%2033405%20Salinas%2C%20Asturias!5e0!3m2!1sen!2ses!4v1683268826587!5m2!1sen!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
 
 
 
