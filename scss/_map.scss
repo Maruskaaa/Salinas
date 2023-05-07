@@ -1,0 +1,23 @@
+@use 'basic';
+@use 'colors';
+
+.map {width: 600px;}
+
+
+
+
+
+.booking {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+    padding: 0;
+    width: 500px;
+    margin: auto;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.booking p {font-size: 26px; font-weight: bold;
+text-align: center; color: white;}
+

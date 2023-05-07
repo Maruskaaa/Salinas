@@ -1,10 +1,18 @@
 @use 'colors';
 @use 'basic';
 
+
+
+.gallery {display: grid;
+grid-column: 1fr;
+row-gap: 40px}
+
 .box {
-    background-color: white;
+background-color: white;
+padding: 30px ;
 max-width: 70%; margin: auto;
-display: flex;
+border: 2px white;
+display: grid;
+grid-template-columns: 1fr 1fr ;
 }
 
-.box__photo {width: 50%;}

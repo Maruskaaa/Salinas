@@ -1,11 +1,12 @@
 @use 'colors';
 
 $body-fontsize: 16px;
-$h1-fontsize: 50px;
+$h1-fontsize: 60px;
 $headrfont: 'Dancing Script', cursive;
 $h2-fontsize: 20px;
 $h3-fontsize: 16px;
 $h4-fontsize: 16px;
+$textshadow: 0 3px 10px rgba(78, 77, 77, 0.7);
 
 
 html {
@@ -21,15 +22,21 @@ html {
     padding: 0;
     font-family: 'Quicksand', sans-serif;;
     font-size: $body-fontsize;
-    color: colors.$bodycolor;}
+    color: colors.$bodycolor;
+    
+    }
     
 
 .wrapper {max-width: 1400px; 
-min-height: 100vh;;
+min-height: 100vh;
 margin: 0 auto;
 padding: 20px 0px 0px 0px;
-background-image: url(/images/ocean-4.jpg); 
+background-image: linear-gradient(rgba(41, 56, 91, 0.4), rgb(62, 131, 117)), url(/images/ocean-4.jpg); 
 background-position: center;
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;}
+
+h2,
+h3 {color: white;
+text-align: center;}
