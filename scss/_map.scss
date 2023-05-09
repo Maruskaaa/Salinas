@@ -1,11 +1,21 @@
 @use 'basic';
 @use 'colors';
 
-.map {width: 600px;}
 
+.map-container {
+    
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
 
+&__text {padding: 30px;
+background-color: white;}
 
+iframe {padding: 30px; background-color: white;}
 
+h3 {color: colors.$bodycolor; text-align: left;}
+
+}
 
 .booking {
     display: flex;
@@ -16,8 +26,11 @@
     margin: auto;
     justify-content: center;
     margin-top: 100px;
+
+    p {font-size: 26px; font-weight: bold;
+        text-align: center; color: white;}
+
+
 }
 
-.booking p {font-size: 26px; font-weight: bold;
-text-align: center; color: white;}
 

@@ -35,19 +35,21 @@ h3 {
 }
 
 .gallery {
-  display: grid;
-  grid-column: 1fr;
-  row-gap: 40px;
-}
-
-.box {
-  background-color: white;
-  padding: 30px;
-  max-width: 70%;
+  max-width: 800px;
   margin: auto;
-  border: 2px white;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  grid-template-columns: 1fr;
+}
+.gallery__box {
+  background-color: white;
+  padding: 5px;
+}
+.gallery img {
+  width: 100%;
+}
+.gallery figcaption {
+  text-align: center;
 }
 
 form {
@@ -87,8 +89,22 @@ button {
   font-size: 16px;
 }
 
-.map {
-  width: 600px;
+.map-container {
+  margin: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+.map-container__text {
+  padding: 30px;
+  background-color: white;
+}
+.map-container iframe {
+  padding: 30px;
+  background-color: white;
+}
+.map-container h3 {
+  color: #222222;
+  text-align: left;
 }
 
 .booking {
@@ -101,12 +117,23 @@ button {
   justify-content: center;
   margin-top: 100px;
 }
-
 .booking p {
   font-size: 26px;
   font-weight: bold;
   text-align: center;
   color: white;
+}
+
+.footer {
+  background-color: #22617b;
+  max-width: 100%;
+  padding: 60px;
+  display: flex;
+  justify-content: center;
+}
+.footer__icon {
+  width: 30px;
+  margin: 0 20px;
 }
 
 .hero {
@@ -192,19 +219,6 @@ button {
   padding: 0;
   margin: 0;
   margin-top: 10px;
-}
-
-.footer {
-  background-color: #0c4680;
-  max-width: 100%;
-  padding: 60px;
-  display: flex;
-  justify-content: center;
-}
-
-.media__icon {
-  width: 30px;
-  margin: 0 20px;
 }
 
 .icon__airbnb {
