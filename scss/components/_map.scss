@@ -1,0 +1,36 @@
+@use '../abstracts/basic';
+@use '../abstracts/colors';
+
+
+.map-container {
+    
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+
+&__text {padding: 30px;
+background-color: white;}
+
+iframe {padding: 30px; background-color: white;}
+
+h3 {color: colors.$bodycolor; text-align: left;}
+
+}
+
+.booking {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: 1fr;
+    padding: 0;
+    width: 500px;
+    margin: auto;
+    justify-content: center;
+    margin-top: 100px;
+
+    p {font-size: 26px; font-weight: bold;
+        text-align: center; color: white;}
+
+
+}
+
+

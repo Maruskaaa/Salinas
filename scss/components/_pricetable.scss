@@ -1,0 +1,30 @@
+@use '../abstracts/basic';
+@use '../abstracts/colors';
+
+
+.container-table {
+    max-width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 150px;
+    gap: 30px;
+
+    @media screen and (min-width: 800px){
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 60px;
+    }
+
+}
+  
+.table {text-align: center;
+background-color: white;
+border-radius: 30px;
+box-shadow: #407BFF1F 0px 4px 6px;
+padding: 20px;
+
+    h2,
+    h3 {color: colors.$bodycolor;}
+  
+
+}

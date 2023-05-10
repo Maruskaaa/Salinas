@@ -1,0 +1,19 @@
+@use '../abstracts/basic';
+@use '../abstracts/colors';
+
+.hero {
+    padding: 5px 30px;
+    height: 45vh;
+
+
+&__text {  color: white;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: basic.$textshadow;}
+
+p {font-size: 16px; margin-bottom: 60px;}
+
+
+
+
+}

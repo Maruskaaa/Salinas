@@ -1,0 +1,56 @@
+@use 'colors';
+
+
+
+
+$body-fontsize: 16px;
+$h1-fontsize: 70px;
+$headerfont: 'Dancing Script', cursive;
+$h3-fontsize: 30px;
+$h2-fontsize: 40px;
+$h4-fontsize: 20px;
+$textshadow: 0 3px 10px rgba(78, 77, 77, 0.7);
+
+
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  ::before,
+  ::after {
+    box-sizing: inherit;
+  }
+
+  body {
+    margin: 0; 
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;;
+    font-size: $body-fontsize;
+    color: colors.$bodycolor;
+    line-height: 1.6;
+    
+    }
+    
+
+.wrapper {max-width: 1400px; 
+min-height: 100vh;
+margin: 0 auto;
+padding: 20px 0px 0px 0px;
+background-image: linear-gradient(rgba(32, 60, 70, 0.7), rgba(61, 108, 103, 0.6)), url(/images/ocean-4.jpg); 
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-attachment: fixed;}
+
+
+h2,
+h3 {color: white;
+text-align: center; 
+font-family: $headerfont;}
+
+h2 {font-size: $h2-fontsize;}
+h3 {font-size: $h3-fontsize;}
+h4 {font-size: $h4-fontsize;}
+
+h1 {font-family: $headerfont; font-size: $h1-fontsize; margin-bottom: 0;} 

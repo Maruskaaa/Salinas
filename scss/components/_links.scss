@@ -1,0 +1,24 @@
+@use '../abstracts/basic';
+@use '../abstracts/colors';
+
+
+//link home page - find out more
+
+
+.home__link {display: flex; 
+justify-content: center;
+
+a { display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-family: basic.$headerfont ;
+    font-size: 40px;
+}
+
+}
+
+
+    
+
+
+  
