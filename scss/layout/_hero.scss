@@ -3,7 +3,7 @@
 
 .hero {
     padding: 5px 30px;
-    height: 45vh;
+   
 
 
 &__text {  color: white;
@@ -11,9 +11,9 @@
     margin-top: 50px;
     text-shadow: basic.$textshadow;}
 
-p {font-size: 16px; margin-bottom: 60px;}
+p {font-size: 16px; margin-bottom: 60px;
+}
 
-
-
+img {margin-bottom: 0;}
 
 }

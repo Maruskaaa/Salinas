@@ -100,7 +100,7 @@ h1 {
 
 .landingpage {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   padding: 0 5%;
   display: flex;
@@ -120,7 +120,7 @@ h1 {
 @media (min-aspect-ratio: 16/9) {
   .back-video {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 }
 @media (max-aspect-ratio: 16/9) {
@@ -129,23 +129,22 @@ h1 {
     height: auto;
   }
 }
-.landing-content {
-  color: white;
+/* useless 
+     .landing-content {color: white;}
+     .landing-content h1 {font-size: 70px; text-align: center; margin-bottom: 0;}
+    .landing-menu a {color: white;}
+   */
+@media (max-width: 800px) {
+  .back-video {
+    display: none;
+  }
+  body {
+    background: url(/images/ocean-4.jpg);
+    background-size: cover;
+  }
 }
-
-.landing-content h1 {
-  font-size: 70px;
-  text-align: center;
-  margin-bottom: 0;
-}
-
-.landing-menu a {
-  color: white;
-}
-
 .hero {
   padding: 5px 30px;
-  height: 45vh;
 }
 .hero__text {
   color: white;
@@ -157,9 +156,12 @@ h1 {
   font-size: 16px;
   margin-bottom: 60px;
 }
+.hero img {
+  margin-bottom: 0;
+}
 
 .container-table {
-  max-width: 80%;
+  max-width: 70%;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -183,6 +185,14 @@ h1 {
 .table h2,
 .table h3 {
   color: #393939;
+}
+.table h2::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 10px;
+  margin-top: 10px;
+  background-color: #393939;
 }
 
 form {
@@ -257,28 +267,79 @@ button {
   color: white;
 }
 
+.menu__checkbox {
+  position: absolute;
+  left: -9999px;
+}
+
 .menu__list {
-  list-style-type: none;
+  display: none;
+  margin: 0;
   padding: 0;
-  display: flex;
+  list-style: none;
+  background-color: #123b54;
 }
 .menu__list a {
-  text-decoration: none;
-  color: white;
-  text-align: center;
   display: block;
   padding: 10px;
+  text-decoration: none;
+  color: white;
 }
 
 .menu__item {
-  flex: 1 1 0;
+  border-bottom: 1px solid white;
 }
 
-.menu__list a:hover {
-  border: 1px solid #DAE9EF;
-  border-radius: 20px;
+.menu__checkbox:checked ~ .menu__list {
+  display: block;
 }
 
+.menu__toggler {
+  color: white;
+  font-size: 20px;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  padding: 0px;
+}
+
+@media screen and (min-width: 800px) {
+  .menu__toggler {
+    display: none;
+  }
+  .menu__list {
+    display: flex;
+    background-color: transparent;
+  }
+  .menu__item {
+    border-bottom: none;
+    flex: 1 1 0;
+    text-align: center;
+  }
+  .menu__list a:hover {
+    border: 1px solid #DAE9EF;
+    border-radius: 20px;
+  }
+}
+/*
+
+.menu__list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+
+    a {text-decoration: none; 
+        color: white; text-align: center; 
+        display: block;
+        padding: 10px;
+    }
+}
+
+.menu__item {flex: 1 1 0,}
+
+
+.menu__list a:hover {border: 1px solid colors.$secondary-color; border-radius: 20px;}
+
+*/
 .home__link {
   display: flex;
   justify-content: center;
@@ -293,11 +354,15 @@ button {
 
 .home-content {
   text-align: justify;
-  padding: 30px 50px;
-  width: 80%;
+  padding: 30px;
+  width: 90%;
   margin: auto;
   color: white;
-  margin-top: 100px;
+}
+@media screen and (min-width: 800px) {
+  .home-content {
+    width: 80%;
+  }
 }
 .home-content__text {
   margin-bottom: 50px;
@@ -305,7 +370,12 @@ button {
 .home-content__gallery {
   display: grid;
   gap: 30px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+@media screen and (min-width: 800px) {
+  .home-content__gallery {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .home-content img {
   background-color: white;
@@ -313,12 +383,20 @@ button {
 }
 
 .intro-icons {
-  max-width: 700px;
-  margin: 70px auto;
+  max-width: 60%;
+  margin: auto;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto auto;
-  gap: 70px;
+  gap: 30px;
+}
+@media screen and (min-width: 800px) {
+  .intro-icons {
+    max-width: 60%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 70px;
+    margin: 70px auto;
+  }
 }
 
 .intro-icon__icon {
@@ -327,18 +405,31 @@ button {
 
 .intro-icon {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: white;
   border-radius: 30px;
-  padding: 50px 0;
+  padding: 20px 0;
   box-shadow: rgba(64, 123, 255, 0.1215686275) 0px 4px 6px;
+}
+@media screen and (min-width: 800px) {
+  .intro-icon {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .intro-icon__text {
   padding: 0;
-  margin: 0;
-  margin-top: 10px;
+  margin-left: 10px;
+}
+@media screen and (min-width: 800px) {
+  .intro-icon__text {
+    margin: 0;
+    margin-top: 10px;
+  }
 }
 
 .icon__airbnb {
