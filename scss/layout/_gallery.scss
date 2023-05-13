@@ -18,7 +18,27 @@ img {width: 100%;}
 h4 {text-align: center;}
 p {padding: 10px; text-align: justify;}
 
+
+&__icon {max-width: 50px;}
+
+
+a {display: block;
+text-decoration: none;
+padding: 0; 
+margin: 0;
+font-size: 18px;
+color: colors.$third-color;
+font-weight: bold;
+
 }
+
+
+}
+
+
+.gallery__link {display: flex;
+justify-items: center; 
+padding: 5px;}
 
 
 //galerry home page
@@ -28,7 +48,4 @@ p {padding: 10px; text-align: justify;}
 
 img {background-color: white; padding: 5px;}
 }
-
-
-
 

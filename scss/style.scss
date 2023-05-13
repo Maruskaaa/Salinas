@@ -33,7 +33,7 @@
     &__gallery {
         display: grid;
         gap: 30px;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; 
         @media screen and (min-width: 800px){
             grid-template-columns: 1fr 1fr;
         }
@@ -94,13 +94,13 @@ box-shadow: #407BFF1F 0px 4px 6px;
 
 
 
-.icon__airbnb {width: 150px;}
+
 
 
 
 
 
     
-    //end of landing page
+    
 
 
