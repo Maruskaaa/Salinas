@@ -40,8 +40,8 @@ color: white;}
     border-top: 2px solid white;
     padding: 0px;}
 
-//computer menu
 
+//computer menu
 @media screen and (min-width: 800px) {
 
     .menu__toggler {display: none;}
@@ -60,6 +60,41 @@ color: white;}
         border-radius: 20px;
         }
 }
+
+
+
+
+.menu__list--landing {
+    width: 70%;
+    margin: auto;
+    display: flex; 
+    flex-direction: column;
+    background-color: transparent;
+    gap: 20px; 
+
+    a {border: 1px solid colors.$secondary-color; 
+        border-radius: 20px;}
+
+    @media screen and (min-width: 800px) {
+        flex-direction: row;
+        width: 100%;
+        
+    }
+
+
+}
+
+.menu__item--landing {border-bottom: none;
+flex: 1 1 0;
+text-align: center;
+
+a:hover {
+    border: 1px solid colors.$secondary-color; 
+    border-radius: 20px;
+    }
+
+}
+
 
 
 /*

@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
+
 </head>
 
 <body>
@@ -31,12 +32,12 @@
         </label>
 
         <ul class="menu__list menu__list--mobile">
-            <li class="menu__item"><a href="/home/" class="menu__link">Home</a></li>
-            <li class="menu__item"><a href="/apartment/" class="menu__link">Aparmtent</a></li>
-            <li class="menu__item"><a href="/price/" class="menu__link">Price</a></li>
-            <li class="menu__item"><a href="/activities/" class="menu__link">Activities</a></li>
-            <li class="menu__item"><a href="/gallery/" class="menu__link">Gallery</a></li>
-            <li class="menu__item"><a href="/contact/" class="menu__link">Contact</a></li>
+            <li class="menu__item menu__item--mobile"><a href="/home/" class="menu__link">Home</a></li>
+            <li class="menu__item menu__item--mobile"><a href="/apartment/" class="menu__link">Aparmtent</a></li>
+            <li class="menu__item menu__itme--mobile"><a href="/price/" class="menu__link">Price</a></li>
+            <li class="menu__item menu__item--mobile"><a href="/activities/" class="menu__link">Activities</a></li>
+            <li class="menu__item menu__item--mobile"><a href="/gallery/" class="menu__link">Gallery</a></li>
+            <li class="menu__item menu__item--mobile"><a href="/contact/" class="menu__link">Contact</a></li>
         </ul>
     </nav>
 
@@ -48,7 +49,7 @@
     </div>
 
    
-   <img src="/images/wave-2.svg">
+   <img class="hero__img" src="/images/wave-2.svg" alt="wave ilustration">
   
     
 </div>
@@ -65,17 +66,32 @@
 <!--footer-->
 
 <footer class="footer">
-   
-    <div class="foooter__icons">
-        <img class="footer__icon" src="/images/location-icon.svg" alt="location icon">
-        <img class="footer__icon" src="/images/email-icon.svg" alt="mail icon">
-        <img class="footer__icon" src="/images/phone-icon.svg" alt="phone icon">
-        <img class="footer__icon" src="/images/airbnb1-icon.svg" alt="airbnb icon">
+    <div class="footer__left">
+        <div class="footer__box">
+            <img class="footer__icon" src="/images/location-icon.svg" alt="location icon">
+
+             <p>C. Alcalde Luis Treillard, 11 <br>
+        334 05 Salinas</p>
+        </div>
+
+        <div class="footer__box">
+            <img class="footer__icon" src="/images/email-icon.svg" alt="mail icon">
+        
+             <p>salinas@gmail.com</p>
+        </div>
+
+        <div class="footer__box">
+            <img class="footer__icon" src="/images/phone-icon.svg" alt="phone icon">
+            <p>+34 000 000 000</p>
+        </div>
     </div>
 
-    <div>
-        <p>for direct booking</p>
+    <div class="footer__right">
+        <p>For direct booking:</p>
+        <img class="footer__icon--bigger" src="/images/airbnb2-icon.svg">
+        
     </div>
+    
 </footer>
 
 

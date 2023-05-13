@@ -4,16 +4,28 @@
 
 //footer
 .footer {
+    color: white;
     background-color: colors.$primary-color;
     max-width: 100%;
-    padding: 60px; 
+    padding: 30px 60px; 
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
     margin-top: 50px;
 
-    &__icon {width:30px; margin: 0 20px;}
+    @media screen and (min-width: 800px){
+     flex-direction: row;   
+     gap: 100px;
+    }
 
+    &__icon {width:20px;}
+    &__icon--bigger {width: 130px;}
 
+    &__box {
+        display: flex;
+        gap: 15px;
+    }
 }
+
 
 
