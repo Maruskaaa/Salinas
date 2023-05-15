@@ -2,50 +2,23 @@
 @use 'abstracts/colors';
 
 
-@use 'layout/gallery';
+@use 'layout/activities';
 @use 'layout/footer';
 @use 'layout/video';
 @use 'layout/hero';
+@use 'layout/gallery';
+@use 'layout/pricetable';
+@use 'layout/form';
+@use 'layout/map';
+@use 'layout/menu';
+@use 'layout/home-content';
 
-@use 'components/pricetable';
-@use 'components/form';
-@use 'components/map';
-@use 'components/menu';
+
 @use 'components/links';
 
 
 
 
-
-.home-content {
-    text-align: justify; 
-    padding: 30px;
-    width: 90%;
-    margin: auto;
-    color: white;
-
-    @media screen and (min-width: 800px){
-        width: 80% ;
-    }
-
-    &__text {margin-bottom: 50px;}
-    
-    &__gallery {
-        display: grid;
-        gap: 30px;
-        grid-template-columns: 1fr; 
-        @media screen and (min-width: 800px){
-            grid-template-columns: 1fr 1fr;
-        }
-
-
-    }
-
-    img {background-color: white; padding: 5px;}
-
-
-    
-}
 
 //index 
 //ikony

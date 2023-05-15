@@ -1,0 +1,10 @@
+@use '../abstracts/basic';
+@use '../abstracts/colors';
+
+
+.price__content {
+    display: flex;
+}
+
+.price__right__photo {max-width: 200px;}
+

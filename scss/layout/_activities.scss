@@ -1,0 +1,43 @@
+@use '../abstracts/colors';
+@use '../abstracts/basic';
+
+
+.gallery {max-width: 800px;
+margin: auto;
+margin-bottom: 60px;
+display: grid;
+gap: 20px;
+grid-template-columns: 1fr;
+
+&__box {
+background-color: white;
+padding: 10px;}
+
+img {width: 100%;}
+
+h4 {text-align: center;}
+p {padding: 10px; text-align: justify;}
+
+
+&__icon {max-width: 30px;}
+
+
+a {display: block;
+text-decoration: none;
+padding: 0; 
+margin-left: 10px;
+font-size: 18px;
+color: colors.$third-color;
+font-weight: bold;
+
+}
+
+
+}
+
+
+.gallery__link {display: flex;
+justify-items: center; 
+padding: 10px;}
+
+

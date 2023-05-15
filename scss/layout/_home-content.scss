@@ -49,7 +49,42 @@ box-shadow: #407BFF1F 0px 4px 6px;
 
 
 
+.home-content {
+    text-align: justify; 
+    padding: 30px;
+    width: 90%;
+    margin: auto;
+    color: white;
+
+    @media screen and (min-width: 800px){
+        width: 80% ;
+    }
+
+    &__text {margin-bottom: 50px;}
+    
+    &__gallery {
+        display: grid;
+        gap: 30px;
+        grid-template-columns: 1fr; 
+        @media screen and (min-width: 800px){
+            grid-template-columns: 1fr 1fr;
+        }
 
 
+    }
 
+    img {background-color: white; padding: 5px;}
+
+
+    
+}
+
+
+//galerry home page
+
+.intro__gallery {
+    grid-template-columns: 1fr 1fr;
+
+img {background-color: white; padding: 5px;}
+}
 
