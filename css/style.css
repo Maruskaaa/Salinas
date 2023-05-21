@@ -126,12 +126,11 @@ h1 {
 }
 
 body {
-  min-height: 100vh;
   background: url(/images/ocean-4.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100%;
 }
 
 @media (min-width: 800px) {
@@ -176,7 +175,9 @@ body {
   text-shadow: 0 3px 10px rgba(78, 77, 77, 0.7);
 }
 .hero p {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 0;
   margin-bottom: 60px;
 }
 .hero img {
@@ -394,6 +395,9 @@ button {
   .menu__list a:hover {
     border: 1px solid white;
     border-radius: 20px;
+  }
+  a {
+    font-weight: 600;
   }
 }
 .menu__list--landing {
