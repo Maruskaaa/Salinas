@@ -127,8 +127,9 @@ h1 {
 
 body {
   background: url(/images/ocean-4.jpg);
+  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-size: 100% auto;
 }
 
 @media (min-width: 800px) {
@@ -322,9 +323,11 @@ button {
     gap: 60px;
   }
 }
-.map-container iframe {
+.map-container .iframe {
+  max-width: 400px;
   padding: 10px;
   background-color: white;
+  margin: auto;
 }
 .map-container h3 {
   text-align: left;

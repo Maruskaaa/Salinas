@@ -19,9 +19,11 @@
 
 
 
-    iframe {
+    .iframe {
+        max-width: 400px;
         padding: 10px; 
         background-color: white; 
+        margin: auto;
     }
 
     h3 { 
