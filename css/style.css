@@ -13,7 +13,7 @@ body {
   padding: 0;
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
-  color: #393939;
+  color: white;
   line-height: 1.6;
 }
 
@@ -31,7 +31,6 @@ body {
 
 h2,
 h3 {
-  color: white;
   text-align: center;
   font-family: "Dancing Script", cursive;
 }
@@ -63,6 +62,7 @@ h1 {
   grid-template-columns: 1fr;
 }
 .gallery__box {
+  color: #393939;
   background-color: white;
   padding: 10px;
 }
@@ -96,7 +96,6 @@ h1 {
 }
 
 .footer {
-  color: white;
   background-color: #123b54;
   max-width: 100%;
   padding: 30px 60px;
@@ -168,7 +167,6 @@ body {
   padding: 5px 30px;
 }
 .hero__text {
-  color: white;
   text-align: center;
   margin-top: 50px;
   text-shadow: 0 3px 10px rgba(78, 77, 77, 0.7);
@@ -221,7 +219,7 @@ body {
 }
 
 .container-table {
-  max-width: 55%;
+  max-width: 60%;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr;
@@ -238,13 +236,10 @@ body {
 .table {
   text-align: center;
   background-color: white;
+  color: #393939;
   border-radius: 30px;
   box-shadow: rgba(64, 123, 255, 0.1215686275) 0px 4px 6px;
   padding: 20px;
-}
-.table h2,
-.table h3 {
-  color: #393939;
 }
 .table h3 {
   margin-bottom: 0;
@@ -255,6 +250,23 @@ body {
 .table__season {
   margin-top: 0;
   font-style: italic;
+}
+
+.price__image {
+  max-width: 100%;
+  padding: 10px;
+  background-color: white;
+}
+@media screen and (min-width: 800px) {
+  .price__image {
+    grid-column: span 2;
+  }
+}
+.price__image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 form {
@@ -308,9 +320,6 @@ button {
     flex-direction: row;
     gap: 60px;
   }
-}
-.map-container__text {
-  color: white;
 }
 .map-container iframe {
   padding: 10px;
@@ -373,26 +382,24 @@ button {
     text-align: center;
   }
   .menu__list a:hover {
-    border: 1px solid #DAE9EF;
+    border: 1px solid white;
     border-radius: 20px;
   }
 }
 .menu__list--landing {
-  width: 70%;
+  width: 170px;
   margin: auto;
   display: flex;
   flex-direction: column;
   background-color: transparent;
   gap: 20px;
-}
-.menu__list--landing a {
-  border: 1px solid #DAE9EF;
-  border-radius: 20px;
+  /*
+  a {border: 1px solid colors.$secondary-color; 
+      border-radius: 20px;} */
 }
 @media screen and (min-width: 800px) {
   .menu__list--landing {
     flex-direction: row;
-    width: 100%;
   }
 }
 
@@ -402,7 +409,7 @@ button {
   text-align: center;
 }
 .menu__item--landing a:hover {
-  border: 1px solid #DAE9EF;
+  border: 1px solid white;
   border-radius: 20px;
 }
 
@@ -468,6 +475,7 @@ button {
 .intro-icon__text {
   padding: 0;
   margin-left: 10px;
+  color: #393939;
 }
 @media screen and (min-width: 800px) {
   .intro-icon__text {
@@ -481,7 +489,6 @@ button {
   padding: 30px;
   width: 90%;
   margin: auto;
-  color: white;
 }
 @media screen and (min-width: 800px) {
   .home-content {
@@ -514,6 +521,52 @@ button {
   padding: 5px;
 }
 
+.container-apartment {
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 60px auto;
+  gap: 20px;
+}
+@media screen and (min-width: 800px) {
+  .container-apartment {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.apartment-image {
+  max-width: 400px;
+  padding: 10px;
+  background-color: white;
+}
+.apartment-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (min-width: 800px) {
+  .aparmtent-imgage--3 {
+    grid-column: 1;
+    grid-row: 1/span 2;
+  }
+  .aparmtent-content {
+    grid-column: 2/span 2;
+  }
+  .aparmtent-content h3 {
+    text-align: left;
+    padding-top: 0;
+    margin-top: 0;
+  }
+  .aparmtent-content--2 {
+    grid-column: 1/span 2;
+  }
+  .aparmtent-imgage--7 {
+    grid-column: 3;
+    grid-row: 1/span 2;
+  }
+}
 .home__link {
   display: flex;
   justify-content: center;
@@ -521,9 +574,9 @@ button {
 .home__link a {
   display: inline-block;
   text-decoration: none;
-  color: white;
   font-family: "Dancing Script", cursive;
   font-size: 40px;
+  color: white;
 }
 
 .icon__airbnb {
