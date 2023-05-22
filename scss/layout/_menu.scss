@@ -74,9 +74,12 @@ color: white;}
     background-color: transparent;
     gap: 20px; 
 
-    /*
-    a {border: 1px solid colors.$secondary-color; 
-        border-radius: 20px;} */
+    p {text-align: center;}
+   
+
+    a {font-weight: 600;}
+
+    
 
     @media screen and (min-width: 800px) {
         flex-direction: row;
@@ -99,23 +102,3 @@ a:hover {
 
 
 
-/*
-
-.menu__list {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-
-    a {text-decoration: none; 
-        color: white; text-align: center; 
-        display: block;
-        padding: 10px;
-    }
-}
-
-.menu__item {flex: 1 1 0,}
-
-
-.menu__list a:hover {border: 1px solid colors.$secondary-color; border-radius: 20px;}
-
-*/

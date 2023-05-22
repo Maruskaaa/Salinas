@@ -2,43 +2,51 @@
 @use '../abstracts/basic';
 
 
-.gallery {max-width: 800px;
-margin: auto;
-margin-bottom: 60px;
-display: grid;
-gap: 20px;
-grid-template-columns: 1fr;
+.gallery {
+    max-width: 70%;
+    margin: auto;
+    margin-bottom: 60px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
 
 &__box {
-color: colors.$bodydark;
-background-color: white;
-padding: 10px;}
+    color: colors.$bodydark;
+    background-color: white;
+    padding: 10px;}
 
-img {width: 100%;}
+img {
+    width: 100%;}
 
-h4 {text-align: center;}
-p {padding: 10px; text-align: justify;}
+h4 {
+    text-align: center;}
+p {
+    padding: 10px; 
+    text-align: justify;}
+
+h3 {
+    margin: 0;
+}
+
+&__icon {
+    max-width: 30px;}
 
 
-&__icon {max-width: 30px;}
-
-
-a {display: block;
-text-decoration: none;
-padding: 0; 
-margin-left: 10px;
-font-size: 18px;
-color: colors.$secondary-color;
-font-weight: bold;
+a {
+    display: block;
+    text-decoration: none;
+    padding: 0; 
+    margin-left: 10px;
+    font-size: 18px;
+    color: colors.$secondary-color;
+    font-weight: bold;}
 
 }
 
 
-}
-
-
-.gallery__link {display: flex;
-justify-items: center; 
-padding: 10px;}
+.gallery__link {
+    display: flex;
+    justify-items: center; 
+    padding: 10px;}
 
 

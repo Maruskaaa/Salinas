@@ -7,7 +7,7 @@
 //ikony
 .intro-icons {
     max-width: 60% ;
-    margin: auto;
+    margin: 60px auto;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
@@ -16,8 +16,8 @@
     @media screen and (min-width: 800px) {
         max-width: 60%;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 70px; 
-        margin: 70px auto;
+        gap: 100px; 
+        
     }
 
 
@@ -29,7 +29,7 @@ justify-content: center;
 background-color: white;
 border-radius: 30px;
 padding: 20px 0;
-box-shadow: #407BFF1F 0px 4px 6px;
+
 
 @media screen and (min-width: 800px) {
     padding: 50px 0;
@@ -61,7 +61,7 @@ box-shadow: #407BFF1F 0px 4px 6px;
     
 
     @media screen and (min-width: 800px){
-        width: 80% ;
+        max-width: 80% ;
     }
 
     &__text {margin-bottom: 50px;}
@@ -84,11 +84,5 @@ box-shadow: #407BFF1F 0px 4px 6px;
 }
 
 
-//galerry home page
 
-.intro__gallery {
-    grid-template-columns: 1fr 1fr;
-
-img {background-color: white; padding: 5px;}
-}
 

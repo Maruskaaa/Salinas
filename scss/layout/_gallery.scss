@@ -1,23 +1,11 @@
 @use '../abstracts/basic';
 @use '../abstracts/colors';
     
-/*
-.gallery--2 {
-    img{
-        max-width: 100%;
-        height: auto;
-        vertical-align: middle;
-        display: inline-block;
-    }
-    max-width: 90%; 
-    display: grid;
-    grid-template-columns: repeat(auto-fill,400px); 
-    gap: 10px;};
-    */
+
 
 
     .gallery-grid {
-        max-width: 90%;
+        max-width: 80%;
         
         padding: 0;
         margin: 0;

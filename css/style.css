@@ -53,8 +53,12 @@ h1 {
   margin-bottom: 0;
 }
 
+p {
+  text-align: justify;
+}
+
 .gallery {
-  max-width: 800px;
+  max-width: 70%;
   margin: auto;
   margin-bottom: 60px;
   display: grid;
@@ -75,6 +79,9 @@ h1 {
 .gallery p {
   padding: 10px;
   text-align: justify;
+}
+.gallery h3 {
+  margin: 0;
 }
 .gallery__icon {
   max-width: 30px;
@@ -135,7 +142,7 @@ body {
   .landingpage {
     width: 100%;
     min-height: 100vh;
-    /*background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3)); */
+    background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
     position: relative;
     padding: 0 5%;
     display: flex;
@@ -164,6 +171,10 @@ body {
     height: auto;
   }
 }
+.landing-content-text p {
+  font-weight: 600;
+}
+
 .hero {
   padding: 5px 30px;
 }
@@ -177,26 +188,14 @@ body {
   font-weight: 600;
   margin-top: 0;
   margin-bottom: 60px;
+  text-align: center;
 }
 .hero img {
   margin-bottom: 0;
 }
 
-/*
-.gallery--2 {
-    img{
-        max-width: 100%;
-        height: auto;
-        vertical-align: middle;
-        display: inline-block;
-    }
-    max-width: 90%; 
-    display: grid;
-    grid-template-columns: repeat(auto-fill,400px); 
-    gap: 10px;};
-    */
 .gallery-grid {
-  max-width: 90%;
+  max-width: 80%;
   padding: 0;
   margin: 0;
   display: grid;
@@ -249,6 +248,9 @@ body {
 }
 .table h4 {
   margin-bottom: 0;
+}
+.table p {
+  text-align: center;
 }
 .table__season {
   margin-top: 0;
@@ -405,9 +407,12 @@ button {
   flex-direction: column;
   background-color: transparent;
   gap: 20px;
-  /*
-  a {border: 1px solid colors.$secondary-color; 
-      border-radius: 20px;} */
+}
+.menu__list--landing p {
+  text-align: center;
+}
+.menu__list--landing a {
+  font-weight: 600;
 }
 @media screen and (min-width: 800px) {
   .menu__list--landing {
@@ -425,29 +430,9 @@ button {
   border-radius: 20px;
 }
 
-/*
-
-.menu__list {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-
-    a {text-decoration: none; 
-        color: white; text-align: center; 
-        display: block;
-        padding: 10px;
-    }
-}
-
-.menu__item {flex: 1 1 0,}
-
-
-.menu__list a:hover {border: 1px solid colors.$secondary-color; border-radius: 20px;}
-
-*/
 .intro-icons {
   max-width: 60%;
-  margin: auto;
+  margin: 60px auto;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto auto;
@@ -457,8 +442,7 @@ button {
   .intro-icons {
     max-width: 60%;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 70px;
-    margin: 70px auto;
+    gap: 100px;
   }
 }
 
@@ -473,7 +457,6 @@ button {
   background-color: white;
   border-radius: 30px;
   padding: 20px 0;
-  box-shadow: rgba(64, 123, 255, 0.1215686275) 0px 4px 6px;
 }
 @media screen and (min-width: 800px) {
   .intro-icon {
@@ -504,7 +487,7 @@ button {
 }
 @media screen and (min-width: 800px) {
   .home-content {
-    width: 80%;
+    max-width: 80%;
   }
 }
 .home-content__text {
@@ -521,14 +504,6 @@ button {
   }
 }
 .home-content img {
-  background-color: white;
-  padding: 5px;
-}
-
-.intro__gallery {
-  grid-template-columns: 1fr 1fr;
-}
-.intro__gallery img {
   background-color: white;
   padding: 5px;
 }
@@ -593,54 +568,4 @@ button {
 
 .icon__airbnb {
   width: 150px;
-}
-
-.intro-icons {
-  max-width: 60%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto;
-  gap: 30px;
-}
-@media screen and (min-width: 800px) {
-  .intro-icons {
-    max-width: 60%;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 70px;
-    margin: 70px auto;
-  }
-}
-
-.intro-icon__icon {
-  width: 60px;
-}
-
-.intro-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: white;
-  border-radius: 30px;
-  padding: 20px 0;
-  box-shadow: rgba(64, 123, 255, 0.1215686275) 0px 4px 6px;
-}
-@media screen and (min-width: 800px) {
-  .intro-icon {
-    padding: 50px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.intro-icon__text {
-  padding: 0;
-  margin-left: 10px;
-}
-@media screen and (min-width: 800px) {
-  .intro-icon__text {
-    margin: 0;
-    margin-top: 10px;
-  }
 }/*# sourceMappingURL=style.css.map */
