@@ -22,6 +22,9 @@
         border-radius: 20px;
         color: white;
 
-        a:hover {background-color: colors.$primary-color;}
     }
+
+    
+    a:hover {background-color: colors.$primary-color;
+    border: 0px}
 }

@@ -32,12 +32,17 @@
         </label>
 
         <ul class="menu__list menu__list--mobile">
-            <li class="menu__item menu__item--mobile"><a href="/home/" class="menu__link">Home</a></li>
-            <li class="menu__item menu__item--mobile"><a href="/apartment/" class="menu__link">Aparmtent</a></li>
-            <li class="menu__item menu__itme--mobile"><a href="/price/" class="menu__link">Price</a></li>
-            <li class="menu__item menu__item--mobile"><a href="/activities/" class="menu__link">Activities</a></li>
-            <li class="menu__item menu__item--mobile"><a href="/gallery/" class="menu__link">Gallery</a></li>
-            <li class="menu__item menu__item--mobile"><a href="/contact/" class="menu__link">Contact</a></li>
+            <li class="menu__item menu__item--mobile {{'menu__item--active' if page.fileSlug === 'home'}}"><a href="/home/" class="menu__link">Home</a></li>
+
+            <li class="menu__item menu__item--mobile {{'menu__item--active' if page.fileSlug === 'apartment'}}"><a href="/apartment/" class="menu__link">Aparmtent</a></li>
+
+            <li class="menu__item menu__itme--mobile {{'menu__item--active' if page.fileSlug === 'price'}}"><a href="/price/" class="menu__link">Price</a></li>
+
+            <li class="menu__item menu__item--mobile {{'menu__item--active' if page.fileSlug === 'activities'}}"><a href="/activities/" class="menu__link">Activities</a></li>
+
+            <li class="menu__item menu__item--mobile {{'menu__item--active' if page.fileSlug === 'gallery'}}"><a href="/gallery/" class="menu__link">Gallery</a></li>
+
+            <li class="menu__item menu__item--mobile {{'menu__item--active' if page.fileSlug === 'contact'}}"><a href="/contact/" class="menu__link">Contact</a></li>
         </ul>
     </nav>
 

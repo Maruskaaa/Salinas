@@ -385,6 +385,7 @@ button {
   }
   .menu__list {
     display: flex;
+    gap: 20px;
     background-color: transparent;
   }
   .menu__item {
@@ -398,6 +399,10 @@ button {
   }
   a {
     font-weight: 600;
+  }
+  .menu__item--active {
+    border: 1px solid white;
+    border-radius: 20px;
   }
 }
 .menu__list--landing {
@@ -578,8 +583,9 @@ button {
   border-radius: 20px;
   color: white;
 }
-.form-sent a a:hover {
+.form-sent a:hover {
   background-color: #123b54;
+  border: 0px;
 }
 
 .home__link {
