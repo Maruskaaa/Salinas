@@ -171,17 +171,18 @@ body {
     height: auto;
   }
 }
-.landing-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.landing-content-text {
+  padding-top: 20vh;
 }
-
 .landing-content-text p {
   padding: 20px;
   font-weight: 600;
   text-align: center;
+}
+@media screen and (min-width: 800px) {
+  .landing-content-text {
+    padding: 0;
+  }
 }
 
 .hero {

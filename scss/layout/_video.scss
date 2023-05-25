@@ -47,16 +47,14 @@ background-repeat: no-repeat;
         }
  
 
-.landing-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
 .landing-content-text {
-    
+    padding-top: 20vh;
     p { padding: 20px;
         font-weight: 600;
-        text-align: center;}}
+        text-align: center;}
+    
+        @media screen and (min-width: 800px) {
+            padding: 0;}}
        
