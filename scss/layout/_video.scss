@@ -47,8 +47,16 @@ background-repeat: no-repeat;
         }
  
 
+.landing-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .landing-content-text {
-    margin-top: 40px;
+    
     p { padding: 20px;
-        font-weight: 600;}}
+        font-weight: 600;
+        text-align: center;}}
        
