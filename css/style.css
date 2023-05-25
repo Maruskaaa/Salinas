@@ -171,6 +171,10 @@ body {
     height: auto;
   }
 }
+.landing-content-text {
+  margin-top: 60px;
+  padding: 40px;
+}
 .landing-content-text p {
   font-weight: 600;
 }
@@ -407,11 +411,11 @@ button {
 }
 .menu__list--landing {
   width: 170px;
+  padding: 40px;
   margin: auto;
   display: flex;
   flex-direction: column;
   background-color: transparent;
-  gap: 20px;
 }
 .menu__list--landing p {
   text-align: center;

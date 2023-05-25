@@ -73,13 +73,14 @@ color: white;}
 //landing menu
 .menu__list--landing {
     width: 170px;
+    padding: 40px;
     margin: auto;
     display: flex; 
     flex-direction: column;
     background-color: transparent;
-    gap: 20px; 
 
-    p {text-align: center;}
+    p {text-align: center; 
+        }
    
 
     a {font-weight: 600;}
