@@ -172,10 +172,10 @@ body {
   }
 }
 .landing-content-text {
-  margin-top: 60px;
-  padding: 40px;
+  margin-top: 40px;
 }
 .landing-content-text p {
+  padding: 20px;
   font-weight: 600;
 }
 
