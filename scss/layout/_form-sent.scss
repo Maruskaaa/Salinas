@@ -1,0 +1,27 @@
+@use '../abstracts/basic';
+@use '../abstracts/colors';
+    
+.form-sent {
+    width: 400px;
+    height: 250px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    
+    p {font-family: basic.$headerfont ; font-size: 30px; 
+    flex-shrink: 0;}
+
+    a { display: inline-block;
+        text-decoration: none;
+        padding: 10px 60px;
+        border: 1px solid white;
+        border-radius: 20px;
+        color: white;
+
+        a:hover {background-color: colors.$primary-color;}
+    }
+}

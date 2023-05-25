@@ -554,6 +554,34 @@ button {
     grid-row: 1/span 2;
   }
 }
+.form-sent {
+  width: 400px;
+  height: 250px;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid white;
+}
+.form-sent p {
+  font-family: "Dancing Script", cursive;
+  font-size: 30px;
+  flex-shrink: 0;
+}
+.form-sent a {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 60px;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
+}
+.form-sent a a:hover {
+  background-color: #123b54;
+}
+
 .home__link {
   display: flex;
   justify-content: center;
