@@ -58,12 +58,17 @@ p {
 }
 
 .gallery {
-  max-width: 70%;
+  max-width: 90%;
   margin: auto;
   margin-bottom: 60px;
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr;
+}
+@media screen and (min-width: 800px) {
+  .gallery {
+    max-width: 70%;
+  }
 }
 .gallery__box {
   color: #393939;

@@ -3,12 +3,14 @@
 
 
 .gallery {
-    max-width: 70%;
+    max-width: 90%;
     margin: auto;
     margin-bottom: 60px;
     display: grid;
     gap: 20px;
     grid-template-columns: 1fr;
+
+    @media screen and (min-width: 800px) {max-width: 70%;}
 
 &__box {
     color: colors.$bodydark;
